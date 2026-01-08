@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>სერვისები</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>EduExplain</h1>
+    <ul>
+      <li><a href="index.html">მთავარი</a></li>
+      <li><a href="about.html">ჩვენს შესახებ</a></li>
+      <li><a href="services.html">სერვისები</a></li>
+      <li><a href="news.html">სიახლე</a></li>
+      <li><a href="contact.html">კონტაქტი</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>საგნები</h2>
+
+      <div class="cards">
+
+        <!-- მათემატიკა -->
+        <div class="card" id="math">
+          <h3>მათემატიკა</h3>
+          <p>ალგებრა, გეომეტრია, ფუნქციები</p>
+          <button class="btn" onclick="toggle('math-details')">დეტალები</button>
+
+          <div class="details" id="math-details">
+            <img src="https://images.unsplash.com/photo-1509228627152-72ae9ae6848d" alt="">
+            <ul>
+              <li>📘 <a href="https://www.khanacademy.org/math" target="_blank">Khan Academy – Math</a></li>
+              <li>📄 ფუნქციების დავალებები</li>
+              <li>✏️ მაგალითები ნაბიჯ-ნაბიჯ</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- პროგრამირება -->
+        <div class="card" id="programming">
+          <h3>პროგრამირება</h3>
+          <p>HTML, CSS, JavaScript</p>
+          <button class="btn" onclick="toggle('prog-details')">დეტალები</button>
+
+          <div class="details" id="prog-details">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="">
+            <ul>
+              <li>📘 <a href="https://developer.mozilla.org" target="_blank">MDN Docs</a></li>
+              <li>💻 პრაქტიკული დავალებები</li>
+              <li>🧠 ლოგიკური ახსნა</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ფიზიკა -->
+        <div class="card">
+          <h3>ფიზიკა</h3>
+          <p>მოძრაობა, ძალა, ენერგია</p>
+          <button class="btn" onclick="toggle('physics-details')">დეტალები</button>
+
+          <div class="details" id="physics-details">
+            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d" alt="">
+            <ul>
+              <li>📘 <a href="https://www.physicsclassroom.com" target="_blank">Physics Classroom</a></li>
+              <li>⚙️ ამოცანების ახსნა</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  function toggle(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+
+<footer>
+  <p>© 2026 EduExplain</p>
+</footer>
+
+</body>
+</html>

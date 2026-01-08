@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>EduExplain | ისწავლე რატომ და როგორ</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <nav>
+    <h1>EduExplain</h1>
+    <ul>
+      <li><a href="index.html">მთავარი</a></li>
+      <li><a href="about.html">ჩვენს შესახებ</a></li>
+      <li><a href="services.html">სერვისები</a></li>
+      <li><a href="news.html">სიახლე</a></li>
+      <li><a href="contact.html">კონტაქტი</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h2>დასვი კითხვა ნებისმიერ საგანზე</h2>
+    <p>ჩვენ აგიხსნით რატომ და როგორ</p>
+  </section>
+
+  
+</main><main>
+  <section class="section">
+    <div class="section-inner hero">
+      <h2>დასვი კითხვა ნებისმიერ საგანზე</h2>
+      <p>ჩვენ აგიხსნით რატომ და როგორ</p>
+
+      <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="მაგ: მათემატიკა, ფუნქცია..." required>
+        <button class="btn">ძიება</button>
+      </form>
+
+      <p id="searchResult"></p>
+    </div>
+  </section>
+</main>
+
+<script>
+  const form = document.getElementById('searchForm');
+  const input = document.getElementById('searchInput');
+  const result = document.getElementById('searchResult');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const query = input.value.toLowerCase();
+
+    if (query.includes('მათემატიკა')) {
+      window.location.href = 'services.html#math';
+    } else if (query.includes('პროგრამირება')) {
+      window.location.href = 'services.html#programming';
+    } else {
+      result.textContent = 'სამწუხაროდ ასეთი საგანი ვერ მოიძებნა';
+      result.style.color = 'red';
+    }
+  });
+</script>
+
+
+<footer>
+  <p>© 2026 EduExplain</p>
+</footer>
+</body>
+</html>
