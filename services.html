@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>სერვისები</title>
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ser-1.css">
 </head>
 <body>
 
@@ -19,73 +19,224 @@
       <li><a href="contact.html">კონტაქტი</a></li>
     </ul>
   </nav>
-</header>
+ <main id="main-content">
+    <section class="hero">
+      <h1>სწავლა არასდროს ყოფილა ასე მარტივი 🚀</h1>
+      <p>აღმოაჩინე ათასობით სასწავლო მასალა ერთ ადგილას</p>
+    </section>
 
-  <section class="section">
-    <div class="section-inner">
-      <h2>საგნები</h2>
+    <section class="search-section">
+      <div class="search-box">
+        <h3>🔍 მოძებნე საგანი</h3>
+        <input type="text" class="search-input" placeholder="მაგ: მათემატიკა, ფიზიკა, პროგრამირება...">
+        <button class="btn-search">ძიება</button>
+      </div>
 
-      <div class="cards">
+      <div class="search-box" style="margin-top: 20px;">
+        <h3>🎯 პროგრამირების გაკვეთილი</h3>
+        <p style="color: #666;">კოდის უნიერსალური ნაბიჯი</p>
+        <button class="btn-search">ნახვა</button>
+      </div>
+    </section>
 
-        <!-- მათემატიკა -->
-        <div class="card" id="math">
-          <h3>მათემატიკა</h3>
-          <p>ალგებრა, გეომეტრია, ფუნქციები</p>
-          <button class="btn" onclick="toggle('math-details')">დეტალები</button>
-
-          <div class="details" id="math-details">
-            <img src="https://images.unsplash.com/photo-1509228627152-72ae9ae6848d" alt="">
-            <ul>
-              <li>📘 <a href="https://www.khanacademy.org/math" target="_blank">Khan Academy – Math</a></li>
-              <li>📄 ფუნქციების დავალებები</li>
-              <li>✏️ მაგალითები ნაბიჯ-ნაბიჯ</li>
-            </ul>
+    <section class="subjects-section" id="subjects">
+      <h2>📖 საგნები</h2>
+      <div class="subjects-grid">
+        <div class="subject-card">
+          <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=250&fit=crop" alt="მათემატიკა">
+          <div class="subject-content">
+            <h3>🔢 მათემატიკა</h3>
+            <p>ალგებრა, გეომეტრია, მათემატიკური ანალიზი</p>
+            <button class="btn-primary" onclick="showDetailPage('math')">დაწყება →</button>
+          </div>
+          <div class="subject-links">
+            <a href="https://www.khanacademy.org/math" target="_blank"><span>📚 Khan Academy – Math</span></a>
+            <a href="https://www.mathsisfun.com" target="_blank"><span>📖 Math is Fun</span></a>
+            <a href="https://www.wolframalpha.com" target="_blank"><span>✏️ Wolfram Alpha</span></a>
           </div>
         </div>
 
-        <!-- პროგრამირება -->
-        <div class="card" id="programming">
-          <h3>პროგრამირება</h3>
-          <p>HTML, CSS, JavaScript</p>
-          <button class="btn" onclick="toggle('prog-details')">დეტალები</button>
-
-          <div class="details" id="prog-details">
-            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="">
-            <ul>
-              <li>📘 <a href="https://developer.mozilla.org" target="_blank">MDN Docs</a></li>
-              <li>💻 პრაქტიკული დავალებები</li>
-              <li>🧠 ლოგიკური ახსნა</li>
-            </ul>
+        <div class="subject-card">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop" alt="პროგრამირება">
+          <div class="subject-content">
+            <h3>💻 პროგრამირება</h3>
+            <p>HTML, CSS, JavaScript, Python</p>
+            <button class="btn-primary" onclick="showDetailPage('programming')">დაწყება →</button>
+          </div>
+          <div class="subject-links">
+            <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank"><span>📚 MDN Docs</span></a>
+            <a href="https://www.w3schools.com" target="_blank"><span>💻 W3Schools</span></a>
+            <a href="https://www.freecodecamp.org" target="_blank"><span>🔧 freeCodeCamp</span></a>
           </div>
         </div>
 
-        <!-- ფიზიკა -->
-        <div class="card">
-          <h3>ფიზიკა</h3>
-          <p>მოძრაობა, ძალა, ენერგია</p>
-          <button class="btn" onclick="toggle('physics-details')">დეტალები</button>
-
-          <div class="details" id="physics-details">
-            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d" alt="">
-            <ul>
-              <li>📘 <a href="https://www.physicsclassroom.com" target="_blank">Physics Classroom</a></li>
-              <li>⚙️ ამოცანების ახსნა</li>
-            </ul>
+        <div class="subject-card">
+          <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=250&fit=crop" alt="ფიზიკა">
+          <div class="subject-content">
+            <h3>⚡ ფიზიკა</h3>
+            <p>მექანიკა, ელექტრომაგნეტიზმი, თერმოდინამიკა</p>
+            <button class="btn-primary" onclick="showDetailPage('physics')">დაწყება →</button>
+          </div>
+          <div class="subject-links">
+            <a href="https://www.physicsclassroom.com" target="_blank"><span>📚 Physics Classroom</span></a>
+            <a href="https://phet.colorado.edu" target="_blank"><span>⚡ PhET Simulations</span></a>
+            <a href="https://www.khanacademy.org/science/physics" target="_blank"><span>🔬 Khan Academy Physics</span></a>
           </div>
         </div>
 
+        <div class="subject-card">
+          <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&h=250&fit=crop" alt="ქიმია">
+          <div class="subject-content">
+            <h3>🧪 ქიმია</h3>
+            <p>ორგანული, არაორგანული, ანალიტიკური</p>
+            <button class="btn-primary" onclick="showDetailPage('chemistry')">დაწყება →</button>
+          </div>
+          <div class="subject-links">
+            <a href="https://www.khanacademy.org/science/chemistry" target="_blank"><span>📚 Khan Academy Chemistry</span></a>
+            <a href="https://www.chemguide.co.uk" target="_blank"><span>🧪 Chemguide</span></a>
+            <a href="https://ptable.com" target="_blank"><span>⚗️ Periodic Table</span></a>
+          </div>
+        </div>
+
+        <div class="subject-card">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop" alt="ბიოლოგია">
+          <div class="subject-content">
+            <h3>🧬 ბიოლოგია</h3>
+            <p>უჯრედული, გენეტიკა, ეკოლოგია</p>
+            <button class="btn-primary" onclick="showDetailPage('biology')">დაწყება →</button>
+          </div>
+          <div class="subject-links">
+            <a href="https://www.khanacademy.org/science/biology" target="_blank"><span>📚 Khan Academy Biology</span></a>
+            <a href="https://www.nature.com/scitable" target="_blank"><span>🔬 Nature Scitable</span></a>
+            <a href="https://www.biologycorner.com" target="_blank"><span>🧬 Biology Corner</span></a>
+          </div>
+        </div>
+
+        <div class="subject-card">
+          <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=400&h=250&fit=crop" alt="ისტორია">
+          <div class="subject-content">
+            <h3>📜 ისტორია</h3>
+            <p>საქართველოს, მსოფლიო, თანამედროვე</p>
+            <button class="btn-primary" onclick="showDetailPage('history')">დაწყება →</button>
+          </div>
+          <div class="subject-links">
+            <a href="https://www.khanacademy.org/humanities/world-history" target="_blank"><span>📚 Khan Academy History</span></a>
+            <a href="https://www.history.com" target="_blank"><span>📜 History.com</span></a>
+            <a href="https://www.nationalgeographic.com/history" target="_blank"><span>🌍 Nat Geo History</span></a>
+          </div>
+        </div>
+
+        <div class="subject-card">
+          <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&h=250&fit=crop" alt="ინგლისური">
+          <div class="subject-content">
+            <h3>🗣️ ინგლისური ენა</h3>
+            <p>გრამატიკა, ლექსიკა, საუბარი</p>
+            <button class="btn-primary" onclick="showDetailPage('english')">დაწყება →</button>
+          </div>
+          <div class="subject-links">
+            <a href="https://www.duolingo.com" target="_blank"><span>📚 Duolingo</span></a>
+            <a href="https://learnenglish.britishcouncil.org" target="_blank"><span>🗣️ British Council</span></a>
+            <a href="https://www.bbc.co.uk/learningenglish" target="_blank"><span>📖 BBC Learning English</span></a>
+          </div>
+        </div>
+
+        <div class="subject-card">
+          <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=400&h=250&fit=crop" alt="გეოგრაფია">
+          <div class="subject-content">
+            <h3>🌍 გეოგრაფია</h3>
+            <p>ფიზიკური, ეკონომიკური, სოციალური</p>
+            <button class="btn-primary" onclick="showDetailPage('geography')">დაწყება →</button>
+          </div>
+          <div class="subject-links">
+            <a href="https://www.nationalgeographic.com" target="_blank"><span>📚 National Geographic</span></a>
+            <a href="https://www.worldatlas.com" target="_blank"><span>🗺️ World Atlas</span></a>
+            <a href="https://www.google.com/earth" target="_blank"><span>🌍 Google Earth</span></a>
+          </div>
+        </div>
+
+        <div class="subject-card">
+          <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&h=250&fit=crop" alt="ეკონომიკა">
+          <div class="subject-content">
+            <h3>💰 ეკონომიკა</h3>
+            <p>მიკრო, მაკრო, საერთაშორისო</p>
+            <button class="btn-primary" onclick="showDetailPage('economics')">დაწყება →</button>
+          </div>
+          <div class="subject-links">
+            <a href="https://www.khanacademy.org/economics-finance-domain" target="_blank"><span>📚 Khan Academy Economics</span></a>
+            <a href="https://www.investopedia.com" target="_blank"><span>💰 Investopedia</span></a>
+            <a href="https://www.econlib.org" target="_blank"><span>📊 Library of Economics</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Detail Pages -->
+  <section id="math-page" class="subject-detail-page">
+    <div class="container">
+      <button class="back-btn" onclick="hideDetailPage()">← უკან დაბრუნება</button>
+      <h2>🔢 მათემატიკა - სრული მასალა</h2>
+      
+      <div class="class-sections">
+        <div class="class-section">
+          <h3>7-8 კლასი</h3>
+          <ul class="topic-list">
+            <li><a href="https://www.khanacademy.org/math/pre-algebra" target="_blank"><span>პრე-ალგებრა და ძირითადი ცნებები</span></a></li>
+            <li><a href="https://www.khanacademy.org/math/cc-seventh-grade-math" target="_blank"><span>წილადები და ათწილადები</span></a></li>
+            <li><a href="https://www.khanacademy.org/math/basic-geo" target="_blank"><span>გეომეტრიის საფუძვლები</span></a></li>
+          </ul>
+        </div>
+
+        <div class="class-section">
+          <h3>9-10 კლასი</h3>
+          <ul class="topic-list">
+            <li><a href="https://www.khanacademy.org/math/algebra" target="_blank"><span>ალგებრა I - გამონათქვამები და განტოლებები</span></a></li>
+            <li><a href="https://www.khanacademy.org/math/geometry" target="_blank"><span>გეომეტრია - სწორხაზოვანი და წრიული ფიგურები</span></a></li>
+            <li><a href="https://www.mathsisfun.com/algebra/index.html" target="_blank"><span>კვადრატული განტოლებები</span></a></li>
+          </ul>
+        </div>
+
+        <div class="class-section">
+          <h3>11-12 კლასი</h3>
+          <ul class="topic-list">
+            <li><a href="https://www.khanacademy.org/math/algebra2" target="_blank"><span>ალგებრა II - კომპლექსური რიცხვები</span></a></li>
+            <li><a href="https://www.khanacademy.org/math/trigonometry" target="_blank"><span>ტრიგონომეტრია</span></a></li>
+            <li><a href="https://www.khanacademy.org/math/precalculus" target="_blank"><span>მათემატიკური ანალიზის წინასწარი კურსი</span></a></li>
+          </ul>
+        </div>
+
+        <div class="class-section">
+          <h3>უნივერსიტეტი</h3>
+          <ul class="topic-list">
+            <li><a href="https://www.khanacademy.org/math/calculus-1" target="_blank"><span>კალკულუსი I - წარმოებული</span></a></li>
+            <li><a href="https://www.khanacademy.org/math/calculus-2" target="_blank"><span>კალკულუსი II - ინტეგრალი</span></a></li>
+            <li><a href="https://www.khanacademy.org/math/linear-algebra" target="_blank"><span>ხაზოვანი ალგებრა</span></a></li>
+            <li><a href="https://www.khanacademy.org/math/differential-equations" target="_blank"><span>დიფერენციალური განტოლებები</span></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
-</main>
 
-<script>
-  function toggle(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === 'block' ? 'none' : 'block';
-  }
-</script>
+  <footer>
+    <p>© 2024 EduExplain. ყველა უფლება დაცულია. 📚✨</p>
+  </footer>
 
+  <script>
+    function showDetailPage(subject) {
+      document.getElementById('main-content').style.display = 'none';
+      document.getElementById(subject + '-page').classList.add('active');
+      window.scrollTo(0, 0);
+    }
+
+    function hideDetailPage() {
+      document.getElementById('main-content').style.display = 'block';
+      document.querySelectorAll('.subject-detail-page').forEach(page => {
+        page.classList.remove('active');
+      });
+      window.scrollTo(0, 0);
+    }
+  </script>
 
 <footer>
   <p>© 2026 EduExplain</p>
