@@ -2,237 +2,56 @@
 <html lang="ka">
 <head>
   <meta charset="UTF-8">
-  <title>სიახლეები</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/new.css">
-  <style>
-</head> 
+  <title>EduExplain | სიახლეები</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-      <nav className="bg-white/10 backdrop-blur-md border-b border-white/20">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <span className="text-2xl font-bold text-white">EduExplain 🎓</span>
-            </div>
-            <div className="flex gap-6 text-white">
-              <button onClick={() => setActivePage('about')} className="font-semibold">ჩვენს შესახებ</button>
-              <button onClick={() => setActivePage('news')} className="hover:text-purple-200">სიახლეები</button>
-              <button className="hover:text-purple-200">კურსები</button>
-              <button className="hover:text-purple-200">კონტაქტი</button>
-            </div>
-          </div>
-        </div>
-      </nav>
 
-      {/* Hero Section */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-white mb-6">ჩვენს შესახებ</h1>
-          <p className="text-xl text-purple-100 max-w-3xl mx-auto">
-            EduExplain არის თანამედროვე საგანმანათლებლო პლატფორმა, რომელიც ეხმარება სტუდენტებს მიიღონ ხარისხიანი განათლება
-          </p>
-        </div>
+<div class="floating-shapes">
+  <div class="shape"></div><div class="shape"></div>
+  <div class="shape"></div><div class="shape"></div>
+</div>
 
-        {/* Mission Section */}
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
-            <div className="text-4xl mb-4">🎯</div>
-            <h2 className="text-2xl font-bold text-white mb-4">ჩვენი მისია</h2>
-            <p className="text-purple-100 leading-relaxed">
-              ჩვენი მიზანია გავხადოთ ხარისხიანი განათლება ხელმისაწვდომი ყველასთვის. ვქმნით ინტერაქტიულ და საინტერესო საგანმანათლებლო გარემოს, სადაც თითოეული სტუდენტი შეძლებს თავისი პოტენციალის მაქსიმალურად რეალიზებას.
-            </p>
-          </div>
+<header>
+  <nav>
+    <h1 class="logo">EduExplain</h1>
+    <ul>
+      <li><a href="index.html">მთავარი</a></li>
+      <li><a href="services.html">სერვისები</a></li>
+      <li><a href="about.html">ჩვენს შესახებ</a></li>
+      <li><a href="news.html">სიახლე</a></li>
+      <li><a href="contact.html">კონტაქტი</a></li>
+    </ul>
+  </nav>
+</header>
 
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
-            <div className="text-4xl mb-4">👁️</div>
-            <h2 className="text-2xl font-bold text-white mb-4">ჩვენი ხედვა</h2>
-            <p className="text-purple-100 leading-relaxed">
-              ვხედავთ მომავალს, სადაც ყველა სტუდენტს ექნება წვდომა საუკეთესო საგანმანათლებლო რესურსებზე და პროფესიონალ მასწავლებლებზე, მიუხედავად გეოგრაფიული მდებარეობისა და ფინანსური შესაძლებლობებისა.
-            </p>
-          </div>
-        </div>
+<main class="section">
+  <div class="section-inner">
+    <h2>სიახლეები</h2>
+    <div class="cards">
 
-        {/* Stats Section */}
-        <div className="grid md:grid-cols-4 gap-6 mb-16">
-          <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 text-center border border-white/20">
-            <div className="text-4xl font-bold text-white mb-2">5000+</div>
-            <div className="text-purple-100">აქტიური სტუდენტი</div>
-          </div>
-          <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 text-center border border-white/20">
-            <div className="text-4xl font-bold text-white mb-2">200+</div>
-            <div className="text-purple-100">ონლაინ კურსი</div>
-          </div>
-          <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 text-center border border-white/20">
-            <div className="text-4xl font-bold text-white mb-2">50+</div>
-            <div className="text-purple-100">გამოცდილი მასწავლებელი</div>
-          </div>
-          <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 text-center border border-white/20">
-            <div className="text-4xl font-bold text-white mb-2">98%</div>
-            <div className="text-purple-100">კმაყოფილების დონე</div>
-          </div>
-        </div>
-
-        {/* Values Section */}
-        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">ჩვენი ღირებულებები</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="text-4xl mb-3">💡</div>
-              <h3 className="text-xl font-semibold text-white mb-3">ინოვაცია</h3>
-              <p className="text-purple-100">ვიყენებთ უახლეს ტექნოლოგიებს საგანმანათლებლო პროცესის გასაუმჯობესებლად</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl mb-3">🤝</div>
-              <h3 className="text-xl font-semibold text-white mb-3">თანამშრომლობა</h3>
-              <p className="text-purple-100">ვქმნით თანამშრომლობის კულტურას სტუდენტებსა და მასწავლებლებს შორის</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl mb-3">🌟</div>
-              <h3 className="text-xl font-semibold text-white mb-3">ხარისხი</h3>
-              <p className="text-purple-100">ვუზრუნველყოფთ უმაღლესი ხარისხის საგანმანათლებლო კონტენტს</p>
-            </div>
-          </div>
-        </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" alt="">
+        <h3>ახალი ფიზიკის კურსი</h3>
+        <p>ფიზიკის კურსი დაემატა პლატფორმაზე.</p>
       </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="">
+        <h3>ონლაინ კონსულტაციები</h3>
+        <p>ჩაერთე ჩვენი მასწავლებლების ონლაინ შეხვედრებში.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.pexels.com/photos/5212354/pexels-photo-5212354.jpeg" alt="">
+        <h3>დავალებების სისტემა</h3>
+        <p>დავალებების ახალი ტიპები + ავტომატური შეფასება.</p>
+      </div>
+
     </div>
-  );
+  </div>
+</main>
 
-  const NewsPage = () => {
-    const news = [
-      {
-        id: 1,
-        title: "ახალი AI-ზე დაფუძნებული კურსი ხელოვნური ინტელექტის შესახებ",
-        date: "8 იანვარი, 2026",
-        category: "კურსები",
-        image: "🤖",
-        description: "გახსენით ხელოვნური ინტელექტის საფუძვლების სრული კურსი, რომელიც მოიცავს Machine Learning-ს და Deep Learning-ს."
-      },
-      {
-        id: 2,
-        title: "EduExplain-მა მიაღწია 5000+ სტუდენტს",
-        date: "5 იანვარი, 2026",
-        category: "მიღწევები",
-        image: "🎉",
-        description: "ჩვენი პლატფორმა აგრძელებს ზრდას! მადლობა თითოეულ სტუდენტს ნდობისთვის და ერთგულებისთვის."
-      },
-      {
-        id: 3,
-        title: "შემოდგომის სემესტრის რეგისტრაცია დაიწყო",
-        date: "2 იანვარი, 2026",
-        category: "რეგისტრაცია",
-        image: "📝",
-        description: "დარეგისტრირდით 2026 წლის შემოდგომის სემესტრის კურსებზე. ადრეული რეგისტრაციის ფასდაკლება 20%."
-      },
-      {
-        id: 4,
-        title: "ახალი პარტნიორობა წამყვან უნივერსიტეტებთან",
-        date: "28 დეკემბერი, 2025",
-        category: "პარტნიორობა",
-        image: "🤝",
-        description: "EduExplain-მა დაამყარა პარტნიორული ურთიერთობები საქართველოს წამყვან უნივერსიტეტებთან."
-      },
-      {
-        id: 5,
-        title: "უფასო ვებინარი: პროგრამირების საფუძვლები",
-        date: "20 დეკემბერი, 2025",
-        category: "ღონისძიებები",
-        image: "💻",
-        description: "შემოგვიერთდით უფასო ვებინარზე, სადაც განვიხილავთ პროგრამირების საფუძვლებს და კარიერულ შესაძლებლობებს."
-      },
-      {
-        id: 6,
-        title: "მობილური აპლიკაცია უკვე ხელმისაწვდომია",
-        date: "15 დეკემბერი, 2025",
-        category: "ტექნოლოგია",
-        image: "📱",
-        description: "ჩამოტვირთეთ EduExplain-ის მობილური აპლიკაცია iOS-ისა და Android-ის მოწყობილობებისთვის."
-      }
-    ];
-
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-red-500">
-        {/* Navigation */}
-        <nav className="bg-white/10 backdrop-blur-md border-b border-white/20">
-          <div className="max-w-7xl mx-auto px-6 py-4">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <span className="text-2xl font-bold text-white">EduExplain 🎓</span>
-              </div>
-              <div className="flex gap-6 text-white">
-                <button onClick={() => setActivePage('about')} className="hover:text-purple-200">ჩვენს შესახებ</button>
-                <button onClick={() => setActivePage('news')} className="font-semibold">სიახლეები</button>
-                <button className="hover:text-purple-200">კურსები</button>
-                <button className="hover:text-purple-200">კონტაქტი</button>
-              </div>
-            </div>
-          </div>
-        </nav>
-
-        {/* Hero Section */}
-        <div className="max-w-7xl mx-auto px-6 py-16">
-          <div className="text-center mb-12">
-            <h1 className="text-5xl font-bold text-white mb-6">სიახლეები</h1>
-            <p className="text-xl text-purple-100 max-w-3xl mx-auto">
-              იყავით კურსში ყველა მნიშვნელოვანი განახლებისა და ღონისძიების თაობაზე
-            </p>
-          </div>
-
-          {/* Featured News */}
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-12 border border-white/20">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-5xl">{news[0].image}</span>
-              <span className="bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-sm font-semibold">განსაკუთრებული</span>
-            </div>
-            <div className="text-sm text-purple-200 mb-2">{news[0].date} • {news[0].category}</div>
-            <h2 className="text-3xl font-bold text-white mb-4">{news[0].title}</h2>
-            <p className="text-purple-100 text-lg mb-6">{news[0].description}</p>
-            <button className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition">
-              ვრცლად →
-            </button>
-          </div>
-
-          {/* News Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {news.slice(1).map((item) => (
-              <div key={item.id} className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/20 transition cursor-pointer">
-                <div className="text-4xl mb-4">{item.image}</div>
-                <div className="text-sm text-purple-200 mb-2">{item.date}</div>
-                <div className="inline-block bg-purple-600/50 text-white px-3 py-1 rounded-full text-xs font-semibold mb-3">
-                  {item.category}
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
-                <p className="text-purple-100 text-sm mb-4">{item.description}</p>
-                <button className="text-white font-semibold hover:text-purple-200 transition">
-                  ვრცლად →
-                </button>
-              </div>
-            ))}
-          </div>
-
-          {/* Newsletter Subscription */}
-          <div className="mt-16 bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 text-center">
-            <h2 className="text-3xl font-bold text-white mb-4">გამოიწერე სიახლეების გამოშვება</h2>
-            <p className="text-purple-100 mb-6">მიიღე ყველა ახალი ამბავი პირველმა</p>
-            <div className="flex gap-3 max-w-md mx-auto">
-              <input 
-                type="email" 
-                placeholder="შენი ელ-ფოსტა"
-                className="flex-1 px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-purple-200 focus:outline-none focus:border-white"
-              />
-              <button className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition">
-                გამოწერა
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  };
-
-  return activePage === 'about' ? <AboutPage /> : <NewsPage />;
-;
-
-export default EduExplainPages;
 <footer>
   <p>© 2026 EduExplain</p>
 </footer>
