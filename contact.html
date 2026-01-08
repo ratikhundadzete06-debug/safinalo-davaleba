@@ -2,36 +2,222 @@
 <html lang="ka">
 <head>
   <meta charset="UTF-8">
-  <title>კონტაქტი</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>კონტაქტი - EduExplain</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <div class="animated-bg"></div>
+  <div class="floating-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
 
-<header>
-  <nav>
-    <h1>EduExplain</h1>
-    <ul>
-      <li><a href="index.html">მთავარი</a></li>
-      <li><a href="contact.html">კონტაქტი</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <div class="header-container">
+      <div class="logo">EduExplain ✨</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">მთავარი</a></li>
+          <li><a href="services.html">საგნები</a></li>
+          <li><a href="about.html">ჩვენ შესახებ</a></li>
+          <li><a href="news.html">სიახლეები</a></li>
+          <li><a href="contact.html" class="active">კონტაქტი</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<main class="container">
-  <h2>დაგვიკავშირდი</h2>
+  <section class="page-hero" style="padding: 150px 40px 100px;">
+    <div class="container" style="text-align: center;">
+      <h1 style="color: white; font-size: 64px; margin-bottom: 30px; font-weight: 900;">დაგვიკავშირდი 📧</h1>
+      <p style="color: rgba(255,255,255,0.9); font-size: 24px; max-width: 900px; margin: 0 auto;">
+        გაქვს კითხვა, წინადადება თუ უბრალოდ გინდა გაგვიზიარო შენი აზრი? ჩვენ ყოველთვის მზად ვართ გესმოდეთ!
+      </p>
+    </div>
+  </section>
 
-  <form>
-    <input type="text" placeholder="სახელი">
-    <input type="email" placeholder="ელ. ფოსტა">
-    <textarea placeholder="შეტყობინება"></textarea>
-    <button>გაგზავნა</button>
-  </form>
-</main>
+  <section style="padding: 80px 40px; max-width: 1200px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
+      
+      <!-- Contact Form -->
+      <div>
+        <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); padding: 50px; border-radius: 25px; border: 1px solid rgba(255,255,255,0.2);">
+          <h2 style="color: white; font-size: 36px; margin-bottom: 30px; font-weight: 800;">გამოგვიგზავნე შეტყობინება 💬</h2>
+          
+          <form style="display: flex; flex-direction: column; gap: 25px;">
+            <div>
+              <label style="color: rgba(255,255,255,0.9); font-size: 16px; display: block; margin-bottom: 10px; font-weight: 600;">სახელი და გვარი</label>
+              <input type="text" placeholder="მაგ: გიორგი ბერიძე" style="width: 100%; padding: 18px 20px; border: 2px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 12px; color: white; font-size: 16px; transition: all 0.3s;">
+            </div>
+            
+            <div>
+              <label style="color: rgba(255,255,255,0.9); font-size: 16px; display: block; margin-bottom: 10px; font-weight: 600;">ელ-ფოსტა</label>
+              <input type="email" placeholder="example@mail.com" style="width: 100%; padding: 18px 20px; border: 2px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 12px; color: white; font-size: 16px; transition: all 0.3s;">
+            </div>
+            
+            <div>
+              <label style="color: rgba(255,255,255,0.9); font-size: 16px; display: block; margin-bottom: 10px; font-weight: 600;">თემა</label>
+              <select style="width: 100%; padding: 18px 20px; border: 2px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 12px; color: white; font-size: 16px;">
+                <option style="background: #667eea; color: white;">აირჩიე თემა</option>
+                <option style="background: #667eea; color: white;">ზოგადი კითხვა</option>
+                <option style="background: #667eea; color: white;">ტექნიკური პრობლემა</option>
+                <option style="background: #667eea; color: white;">წინადადება</option>
+                <option style="background: #667eea; color: white;">თანამშრომლობა</option>
+                <option style="background: #667eea; color: white;">სხვა</option>
+              </select>
+            </div>
+            
+            <div>
+              <label style="color: rgba(255,255,255,0.9); font-size: 16px; display: block; margin-bottom: 10px; font-weight: 600;">შეტყობინება</label>
+              <textarea placeholder="დაწერე შენი შეტყობინება აქ..." style="width: 100%; padding: 18px 20px; border: 2px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 12px; color: white; font-size: 16px; min-height: 150px; resize: vertical; font-family: inherit; transition: all 0.3s;"></textarea>
+            </div>
+            
+            <button type="submit" style="padding: 18px 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 15px; font-size: 18px; font-weight: 700; cursor: pointer; transition: all 0.3s; box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);">
+              გაგზავნა 🚀
+            </button>
+          </form>
+        </div>
+      </div>
 
-<footer>
-  <p>© 2026 EduExplain</p>
-</footer>
+      <!-- Contact Info -->
+      <div style="display: flex; flex-direction: column; gap: 30px;">
+        
+        <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); padding: 40px; border-radius: 25px; border: 1px solid rgba(255,255,255,0.2);">
+          <div style="font-size: 48px; margin-bottom: 20px;">📍</div>
+          <h3 style="color: white; font-size: 24px; margin-bottom: 15px; font-weight: 700;">მისამართი</h3>
+          <p style="color: rgba(255,255,255,0.8); font-size: 18px; line-height: 1.6;">
+            თბილისი, საქართველო<br>
+            ვაჟა-ფშაველას გამზ. 25
+          </p>
+        </div>
 
+        <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); padding: 40px; border-radius: 25px; border: 1px solid rgba(255,255,255,0.2);">
+          <div style="font-size: 48px; margin-bottom: 20px;">📧</div>
+          <h3 style="color: white; font-size: 24px; margin-bottom: 15px; font-weight: 700;">ელ-ფოსტა</h3>
+          <p style="color: rgba(255,255,255,0.8); font-size: 18px; line-height: 1.6;">
+            info@eduexplain.ge<br>
+            support@eduexplain.ge
+          </p>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); padding: 40px; border-radius: 25px; border: 1px solid rgba(255,255,255,0.2);">
+          <div style="font-size: 48px; margin-bottom: 20px;">📱</div>
+          <h3 style="color: white; font-size: 24px; margin-bottom: 15px; font-weight: 700;">ტელეფონი</h3>
+          <p style="color: rgba(255,255,255,0.8); font-size: 18px; line-height: 1.6;">
+            +995 XXX XX XX XX<br>
+            +995 XXX XX XX XX
+          </p>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); padding: 40px; border-radius: 25px; border: 1px solid rgba(255,255,255,0.2);">
+          <div style="font-size: 48px; margin-bottom: 20px;">⏰</div>
+          <h3 style="color: white; font-size: 24px; margin-bottom: 15px; font-weight: 700;">სამუშაო საათები</h3>
+          <p style="color: rgba(255,255,255,0.8); font-size: 18px; line-height: 1.6;">
+            ორშაბათი - პარასკევი: 9:00 - 18:00<br>
+            შაბათი - კვირა: დახურულია
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 80px 40px; background: rgba(255,255,255,0.05); backdrop-filter: blur(20px);">
+    <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+      <h2 style="color: white; font-size: 42px; margin-bottom: 30px; font-weight: 800;">გამოგვყევი სოციალურ მედიაში 🌐</h2>
+      <div style="display: flex; gap: 25px; justify-content: center; flex-wrap: wrap;">
+        <a href="#" style="width: 70px; height: 70px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; text-decoration: none; border: 2px solid rgba(255,255,255,0.2); transition: all 0.3s;">📘</a>
+        <a href="#" style="width: 70px; height: 70px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; text-decoration: none; border: 2px solid rgba(255,255,255,0.2); transition: all 0.3s;">📸</a>
+        <a href="#" style="width: 70px; height: 70px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; text-decoration: none; border: 2px solid rgba(255,255,255,0.2); transition: all 0.3s;">🐦</a>
+        <a href="#" style="width: 70px; height: 70px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; text-decoration: none; border: 2px solid rgba(255,255,255,0.2); transition: all 0.3s;">💼</a>
+        <a href="#" style="width: 70px; height: 70px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; text-decoration: none; border: 2px solid rgba(255,255,255,0.2); transition: all 0.3s;">📺</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 80px 40px;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 style="color: white; font-size: 42px; margin-bottom: 40px; text-align: center; font-weight: 800;">ხშირად დასმული კითხვები 🤔</h2>
+      <div style="display: grid; gap: 20px;">
+        
+        <details style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); cursor: pointer;">
+          <summary style="color: white; font-size: 20px; font-weight: 700; cursor: pointer;">რამდენად უფასოა პლატფორმა?</summary>
+          <p style="color: rgba(255,255,255,0.8); margin-top: 20px; line-height: 1.7; font-size: 16px;">
+            EduExplain სრულიად უფასო პლატფორმაა. ყველა სასწავლო მასალა, კურსი და ფუნქცია ხელმისაწვდომია 
+            უფასოდ ყველა მომხმარებლისთვის. ჩვენი მისიაა განათლების ხელმისაწვდომობის გაზრდა.
+          </p>
+        </details>
+
+        <details style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2);">
+          <summary style="color: white; font-size: 20px; font-weight: 700; cursor: pointer;">რა საგნები არის ხელმისაწვდომი?</summary>
+          <p style="color: rgba(255,255,255,0.8); margin-top: 20px; line-height: 1.7; font-size: 16px;">
+            პლატფორმაზე ხელმისაწვდომია 50+ საგანი, მათ შორის: მათემატიკა, ფიზიკა, ქიმია, ბიოლოგია, 
+            პროგრამირება, ინგლისური ენა, ისტორია, გეოგრაფია, ეკონომიკა და ბევრი სხვა.
+          </p>
+        </details>
+
+        <details style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2);">
+          <summary style="color: white; font-size: 20px; font-weight: 700; cursor: pointer;">შემიძლია მივიღო სერტიფიკატი?</summary>
+          <p style="color: rgba(255,255,255,0.8); margin-top: 20px; line-height: 1.7; font-size: 16px;">
+            დიახ! კურსის დასრულების შემდეგ თქვენ მიიღებთ ელექტრონულ სერტიფიკატს, რომელსაც შეგიძლიათ 
+            დაამატოთ თქვენს CV-ში ან LinkedIn-ში.
+          </p>
+        </details>
+
+        <details style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2);">
+          <summary style="color: white; font-size: 20px; font-weight: 700; cursor: pointer;">როგორ დავიწყო სწავლა?</summary>
+          <p style="color: rgba(255,255,255,0.8); margin-top: 20px; line-height: 1.7; font-size: 16px;">
+            ძალიან მარტივია! უბრალოდ შედით საგნების გვერდზე, აირჩიეთ სასურველი საგანი და დააჭირეთ 
+            "დაწყება" ღილაკს. არ არის საჭირო რეგისტრაცია დასაწყებად.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>EduExplain</h4>
+        <ul>
+          <li><a href="about.html">ჩვენს შესახებ</a></li>
+          <li><a href="#mission">მისია</a></li>
+          <li><a href="#team">გუნდი</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>საგნები</h4>
+        <ul>
+          <li><a href="services.html">მათემატიკა</a></li>
+          <li><a href="services.html">პროგრამირება</a></li>
+          <li><a href="services.html">ფიზიკა</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>რესურსები</h4>
+        <ul>
+          <li><a href="news.html">ბლოგი</a></li>
+          <li><a href="contact.html">მხარდაჭერა</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>კონტაქტი</h4>
+        <ul>
+          <li><a href="mailto:info@eduexplain.ge">info@eduexplain.ge</a></li>
+          <li><a href="contact.html">დაგვიკავშირდი</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 EduExplain. ყველა უფლება დაცულია. 💜</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

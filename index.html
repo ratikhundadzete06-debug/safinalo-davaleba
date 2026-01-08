@@ -2,72 +2,219 @@
 <html lang="ka">
 <head>
   <meta charset="UTF-8">
-  <title>EduExplain | ისწავლე რატომ და როგორ</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduExplain - სწავლის ახალი გზა 🚀</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-<header>
-  <nav>
-    <h1>EduExplain</h1>
-    <ul>
-      <li><a href="index.html">მთავარი</a></li>
-      <li><a href="about.html">ჩვენს შესახებ</a></li>
-      <li><a href="services.html">სერვისები</a></li>
-      <li><a href="news.html">სიახლე</a></li>
-      <li><a href="contact.html">კონტაქტი</a></li>
-    </ul>
-  </nav>
-</header>
+  <div class="animated-bg"></div>
+  <div class="floating-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
 
-<main>
+  <header>
+    <div class="header-container">
+      <div class="logo">EduExplain ✨</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">მთავარი</a></li>
+          <li><a href="services.html">საგნები</a></li>
+          <li><a href="about.html">ჩვენ შესახებ</a></li>
+          <li><a href="news.html">სიახლეები</a></li>
+          <li><a href="contact.html">კონტაქტი</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <section class="hero">
-    <h2>დასვი კითხვა ნებისმიერ საგანზე</h2>
-    <p>ჩვენ აგიხსნით რატომ და როგორ</p>
-  </section>
-
-  
-</main><main>
-  <section class="section">
-    <div class="section-inner hero">
-      <h2>დასვი კითხვა ნებისმიერ საგანზე</h2>
-      <p>ჩვენ აგიხსნით რატომ და როგორ</p>
-
-      <form id="searchForm">
-        <input type="text" id="searchInput" placeholder="მაგ: მათემატიკა, ფუნქცია..." required>
-        <button class="btn">ძიება</button>
-      </form>
-
-      <p id="searchResult"></p>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>
+          <span class="gradient-text">სწავლა</span><br>
+          არასდროს ყოფილა<br>
+          ასე <span class="gradient-text">მარტივი</span> 🚀
+        </h1>
+        <p>
+          აღმოაჩინე ათასობით უფასო სასწავლო მასალა, ვიდეო გაკვეთილები და 
+          ინტერაქტიული სავარჯიშოები ერთ ადგილას. დაიწყე შენი სასწავლო მოგზაურობა დღესვე!
+        </p>
+        <div class="hero-buttons">
+          <a href="services.html" class="btn-hero btn-primary-hero">დაიწყე სწავლა 📚</a>
+          <a href="#features" class="btn-hero btn-secondary-hero">გაიგე მეტი →</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop" alt="სტუდენტები">
+      </div>
     </div>
   </section>
-</main>
 
-<script>
-  const form = document.getElementById('searchForm');
-  const input = document.getElementById('searchInput');
-  const result = document.getElementById('searchResult');
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-card fade-in">
+        <div class="number">10,000+</div>
+        <div class="label">სასწავლო მასალა</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="number">50+</div>
+        <div class="label">საგანი და კურსი</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="number">100%</div>
+        <div class="label">უფასო წვდომა</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="number">24/7</div>
+        <div class="label">ხელმისაწვდომობა</div>
+      </div>
+    </div>
+  </section>
 
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
+  <section class="features-section" id="features">
+    <div class="features-header fade-in">
+      <h2>რატომ EduExplain? 🌟</h2>
+      <p>ყველაფერი რაც გჭირდება წარმატებული სწავლისთვის</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card fade-in">
+        <span class="feature-icon">📚</span>
+        <h3>ათასობით მასალა</h3>
+        <p>წვდომა უნიკალურ სასწავლო რესურსებზე, სახელმძღვანელოებზე და ვიდეო გაკვეთილებზე ყველა საგანში</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">🎯</span>
+        <h3>პერსონალიზებული</h3>
+        <p>შენი დონის, ინტერესებისა და მიზნების შესაბამისი სასწავლო გეგმა და რეკომენდაციები</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">⚡</span>
+        <h3>სწრაფი პროგრესი</h3>
+        <p>ეფექტური სწავლის მეთოდები და ტექნიკები, რომლებიც დაგეხმარება მიზნის სწრაფად მიღწევაში</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">🌍</span>
+        <h3>გლობალური რესურსები</h3>
+        <p>საუკეთესო საერთაშორისო პლატფორმებთან ინტეგრაცია - Khan Academy, Coursera, და სხვა</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">💯</span>
+        <h3>100% უფასო</h3>
+        <p>ყველა მასალა და რესურსი სრულიად უფასოა. არავითარი ფარული გადასახადი თუ შეზღუდვა</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">🤝</span>
+        <h3>სწავლების მხარდაჭერა</h3>
+        <p>ექსპერტების რჩევები, პასუხები კითხვებზე და სასწავლო თემთან დაკავშირება</p>
+      </div>
+    </div>
+  </section>
 
-    const query = input.value.toLowerCase();
+  <section class="subjects-preview">
+    <div class="subjects-preview-container">
+      <h2>აირჩიე საგანი 📖</h2>
+      <div class="subjects-scroll">
+        <div class="subject-preview-card fade-in">
+          <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=250&fit=crop" alt="მათემატიკა">
+          <div class="subject-preview-content">
+            <h3>🔢 მათემატიკა</h3>
+            <p>ალგებრა, გეომეტრია, ანალიზი</p>
+          </div>
+        </div>
+        <div class="subject-preview-card fade-in">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop" alt="პროგრამირება">
+          <div class="subject-preview-content">
+            <h3>💻 პროგრამირება</h3>
+            <p>HTML, CSS, JavaScript, Python</p>
+          </div>
+        </div>
+        <div class="subject-preview-card fade-in">
+          <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=250&fit=crop" alt="ფიზიკა">
+          <div class="subject-preview-content">
+            <h3>⚡ ფიზიკა</h3>
+            <p>მექანიკა, ელექტრომაგნეტიზმი</p>
+          </div>
+        </div>
+        <div class="subject-preview-card fade-in">
+          <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&h=250&fit=crop" alt="ქიმია">
+          <div class="subject-preview-content">
+            <h3>🧪 ქიმია</h3>
+            <p>ორგანული, არაორგანული</p>
+          </div>
+        </div>
+        <div class="subject-preview-card fade-in">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop" alt="ბიოლოგია">
+          <div class="subject-preview-content">
+            <h3>🧬 ბიოლოგია</h3>
+            <p>უჯრედული, გენეტიკა, ეკოლოგია</p>
+          </div>
+        </div>
+        <div class="subject-preview-card fade-in">
+          <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=400&h=250&fit=crop" alt="ისტორია">
+          <div class="subject-preview-content">
+            <h3>📜 ისტორია</h3>
+            <p>საქართველოს, მსოფლიო</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    if (query.includes('მათემატიკა')) {
-      window.location.href = 'services.html#math';
-    } else if (query.includes('პროგრამირება')) {
-      window.location.href = 'services.html#programming';
-    } else {
-      result.textContent = 'სამწუხაროდ ასეთი საგანი ვერ მოიძებნა';
-      result.style.color = 'red';
-    }
-  });
-</script>
+  <section class="cta-section">
+    <div class="cta-content fade-in">
+      <h2>მზად ხარ დასაწყებად? 🎓</h2>
+      <p>შემოგვიერთდი ათასობით სტუდენტს, რომლებიც უკვე ისწავლიან EduExplain-ის დახმარებით</p>
+      <a href="services.html" class="btn-hero btn-primary-hero">დაიწყე უფასოდ 🚀</a>
+    </div>
+  </section>
 
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>EduExplain</h4>
+        <ul>
+          <li><a href="about.html">ჩვენს შესახებ</a></li>
+          <li><a href="#mission">მისია</a></li>
+          <li><a href="#team">გუნდი</a></li>
+          <li><a href="#careers">კარიერა</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>საგნები</h4>
+        <ul>
+          <li><a href="services.html#math">მათემატიკა</a></li>
+          <li><a href="services.html#programming">პროგრამირება</a></li>
+          <li><a href="services.html#physics">ფიზიკა</a></li>
+          <li><a href="services.html">ყველა საგანი</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>რესურსები</h4>
+        <ul>
+          <li><a href="news.html">ბლოგი</a></li>
+          <li><a href="#guides">სახელმძღვანელოები</a></li>
+          <li><a href="#faq">ხშირი კითხვები</a></li>
+          <li><a href="contact.html">მხარდაჭერა</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>კონტაქტი</h4>
+        <ul>
+          <li><a href="mailto:info@eduexplain.ge">info@eduexplain.ge</a></li>
+          <li><a href="tel:+995">+995 XXX XX XX XX</a></li>
+          <li><a href="contact.html">თბილისი, საქართველო</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 EduExplain. ყველა უფლება დაცულია. 💜 Made with love in Georgia 🇬🇪</p>
+    </div>
+  </footer>
 
-<footer>
-  <p>© 2026 EduExplain</p>
-</footer>
+  <script src="script.js"></script>
 </body>
 </html>
